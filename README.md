@@ -130,8 +130,8 @@ STFT / Log-Mel Spectrogram
       ↓
 CNN
       ↓
-Speaker Embedding
-      ↓
 Speaker Classification
+      ↓
+Speaker Embedding
       +
 Cosine-Similarity Analysis
