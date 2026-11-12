@@ -11,18 +11,18 @@ class SpeakerCNN(nn.Module):
             nn.ReLU(),
             nn.MaxPool2d(2),
 
-            nn.Conv2d(16, 32, kernel_size=3, padding=1),
+            nn.Conv2d(16, 64, kernel_size=3, padding=1),
             nn.ReLU(),
             nn.MaxPool2d(2),
 
-            nn.Conv2d(32, 64, kernel_size=3, padding=1),
+            nn.Conv2d(64, 128, kernel_size=3, padding=1),
             nn.ReLU(),
 
-            nn.AdaptiveAvgPool2d((1, 1)),
+            nn.AdaptiveAvgPool2d((16, 1)),
             nn.Flatten()
         )
 
-        self.embedding_layer = nn.Linear(64, 64)
+        self.embedding_layer = nn.Linear(128 * 16, 64)
         self.classifier = nn.Linear(64, num_speakers)
 
     def forward(self, x):

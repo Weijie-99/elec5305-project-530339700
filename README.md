@@ -2,6 +2,8 @@
 
 ELEC5305 project by Weijie Zhang (SID 530339700)
 
+Demonstration video: https://drive.google.com/file/d/1ae9arZuURe5DEzIc2JrQgC2Hjg8QF7Sw/view?usp=drive_link
+
 ## Project overview
 
 I have used GPT-SoVITS for voice cloning and noticed that the quality of reference recordings can change the result. Speech from videos may contain background noise, and the usable clean segment may be short. This project studies how these conditions affect speaker embeddings: numerical representations of speaker identity.
